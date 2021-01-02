@@ -1,2 +1,2 @@
 # gI2C_mini_master
- VerIilog code for I2C comm with Nintendo Class Mini retro controller
+ I2C comm with Nintendo Classic Mini retro controller for an FPGA in Verilog
