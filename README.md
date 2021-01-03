@@ -19,7 +19,9 @@ The controller I used this project looks like the original NES controller (up/do
    <img src="images/gI2C logic analyzer - A button.png" height="300" align="center">
 </p>
 
-I developed this on a Terasic DE10-Lite board using the Quartus Prime 20.1, Light Edition toolchain. Nothing about the Verilog code is very specific to this board or its Altera MAX10 FPGA, so it should be easy to adapt to other boards. The source code is thoroughly commented and is the best place to understand the assumptions and limitations. Additional Caveats are also in a separate section below.
+I developed this on a Terasic DE10-Lite board using the Quartus Prime 20.1, Light Edition toolchain. Nothing about the Verilog code is very specific to this board or its Altera MAX10 FPGA, so it should be easy to adapt to other boards. The source code is thoroughly commented and is the best place to understand the assumptions and limitations.
+
+Lots more detail also at my website: http://ganslermike.com/?page_id=1615
 
 ### Caveats:
 
@@ -29,6 +31,6 @@ I developed this on a Terasic DE10-Lite board using the Quartus Prime 20.1, Ligh
 - if this code is used in a scenario where clock domain crossing is done, additional care naturally will be needed to manage that
 - the limitations above were not an issue in this NES controller application. See the source code for more details.
 
-Check out the comments in the source code for lots more detail.
 
-Also more info at my website: http://ganslermike.com/?page_id=1615
+
+
