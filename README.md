@@ -21,7 +21,7 @@ The controller I used this project looks like the original NES controller (up/do
 
 I developed this on a Terasic DE10-Lite board using the Quartus Prime 20.1, Light Edition toolchain. Nothing about the Verilog code is very specific to this board or its Altera MAX10 FPGA, so it should be easy to adapt to other boards. The source code is thoroughly commented and is the best place to understand the assumptions and limitations.
 
-Lots more detail also at my website: http://ganslermike.com/?page_id=1615
+## Lots more detail also at my website: http://ganslermike.com/?page_id=1615
 
 ### Caveats:
 
@@ -31,6 +31,13 @@ Lots more detail also at my website: http://ganslermike.com/?page_id=1615
 - if this code is used in a scenario where clock domain crossing is done, additional care naturally will be needed to manage that
 - the limitations above were not an issue in this NES controller application. See the source code for more details.
 
+### Finite state machines implemented in gI2C_low_level_tx_rx.v and gI2C_mini_nes_read.v
+
+<p align="center">
+   <br> <br>
+   <img src="images/gI2C state diagram driver level - cropped.png" height="300" align="center">
+   <img src="images/gI2C state diagram top level cropped.png" height="300" align="center">
+</p>
 
 
 
