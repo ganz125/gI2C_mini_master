@@ -1,7 +1,7 @@
 # gI2C_mini_master
 This FPGA project communicates with a Nintendo Classic Mini Controller by implementing an I2C master device in Verilog.
 
-https://www.youtube.com/watch?v=zHz0d-TQWGw
+### Demo video: https://www.youtube.com/watch?v=zHz0d-TQWGw
 
 The controller I used this project looks like the original NES controller (up/down/left/right, select, start, A, and B only) but has a Wii-style connector. This controller is fundamentally different than the similar-looking USB controllers. NES Classic Mini retro controllers with the Wii connector communicate over an I2C interface, which is necessary for this project.
 
