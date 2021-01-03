@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at gI2C_mini_nes_read.v(139): object "TX_BYTE" differs only in case from object "tx_byte" in the same scope File: D:/intelFPGA_lite/20.1/projects/gI2C_mini_master/gI2C_mini_nes_read.v Line: 139
+Info (10281): Verilog HDL Declaration information at gI2C_low_level_tx_rx.v(92): object "tx_byte" differs only in case from object "TX_BYTE" in the same scope File: D:/intelFPGA_lite/20.1/projects/gI2C_mini_master/gI2C_low_level_tx_rx.v Line: 92
