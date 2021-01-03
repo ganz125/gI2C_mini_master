@@ -1,6 +1,4 @@
 # gI2C_mini_master
- FPGA implementation of I2C comm with a Nintendo Classic Mini retro controller in Verilog.
-
 This FPGA project communicates with a Nintendo Classic Mini Controller by implementing an I2C master device in Verilog.
 
 https://www.youtube.com/watch?v=zHz0d-TQWGw
