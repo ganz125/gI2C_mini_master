@@ -31,12 +31,14 @@ I developed this on a Terasic DE10-Lite board using the Quartus Prime 20.1, Ligh
 - if this code is used in a scenario where clock domain crossing is done, additional care naturally will be needed to manage that
 - the limitations above were not an issue in this NES controller application. See the source code for more details.
 
-### Finite state machines implemented in gI2C_low_level_tx_rx.v and gI2C_mini_nes_read.v
+### Finite state machine implemented in gI2C_low_level_tx_rx.v:
 
 <p align="center">
    <br> <br>
    <img src="images/gI2C state diagram driver level - cropped.png" height="400" align="center">
 </p>
+
+### Finite state machine implemented in gI2C_mini_nes_read.v:
 
 <p align="center">
    <br> <br>
