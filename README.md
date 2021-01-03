@@ -36,6 +36,10 @@ I developed this on a Terasic DE10-Lite board using the Quartus Prime 20.1, Ligh
 <p align="center">
    <br> <br>
    <img src="images/gI2C state diagram driver level - cropped.png" height="300" align="center">
+</p>
+
+<p align="center">
+   <br> <br>
    <img src="images/gI2C state diagram top level cropped.png" height="300" align="center">
 </p>
 
