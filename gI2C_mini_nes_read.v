@@ -107,7 +107,7 @@ module gI2C_mini_nes_read
    //
    output reg           data_valid,      // Pulse that indicates controller_data was updated with new data.
    
-   output wire          busy,            // Module is busy, i.e. transaction in progress
+   output reg           busy,            // Module is busy, i.e. transaction in progress
 
    output reg           btn_none,        // 
    output reg           btn_up,          //
@@ -290,10 +290,12 @@ always @(posedge clk_40) begin
       
          drvr_cmd   <= LL_CMD_NONE;         // Clear cmd trigger sent to driver.
          data_valid <= 0;                   // Indicate to user that no new data available.
+         busy       <= 0;                   // Indicate not busy while in IDLE state
 
          if (request_data) begin            // Wait for user to initiate transaction.
+            busy     <= 1'b1;               // Indicate busy since triggered
             drvr_cmd <= LL_CMD_START_COND;  // Send appropriate trigger to driver.
-            state <= TX_START_COND_1;       // Move on to next state
+            state    <= TX_START_COND_1;    // Move on to next state
          end
          
       end
@@ -471,8 +473,6 @@ always @(posedge clk_40) begin
    
 end  // end of always
 
-
-assign busy = (drvr_busy || state!=IDLE) ? 1'b1 : 1'b0;
 
 
 //
