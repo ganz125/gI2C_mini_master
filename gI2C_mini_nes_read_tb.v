@@ -1,6 +1,6 @@
 //  ------------------------------------------------------------------------------
 //
-//  gI2C_mini_nes_read.v -- I2C comm with Nintendo Class Mini controller
+//  gI2C_mini_nes_read_tb.v -- I2C comm with Nintendo Class Mini controller
 //
 //  Copyright (C) 2020 Michael Gansler
 //
